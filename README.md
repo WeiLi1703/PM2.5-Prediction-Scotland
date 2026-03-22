@@ -1,74 +1,77 @@
-# PM2.5 Prediction & Uncertainty Quantification (Scotland)
+# 🌍 AI-driven PM2.5 Prediction & Decision Support System
 
 ## 🚀 Project Overview
-This project develops machine learning models to predict monthly PM2.5 concentrations across Scotland using environmental, meteorological, and spatial data.
+This project develops a data-driven system for predicting PM2.5 concentrations and supporting environmental decision-making. 
 
-The goal is to build a **deployment-ready prediction pipeline** with reliable uncertainty estimation.
-
----
-
-## 📊 Models Used
-- Linear Model (LM)
-- LASSO Regression
-- Random Forest (RF)
-- Quantile Regression Forest (QRF)
+Instead of focusing only on model accuracy, the project aims to transform machine learning outputs into actionable insights for real-world applications such as urban management, public health, and environmental monitoring.
 
 ---
 
-## 🧪 Validation Strategy
-- Leave-One-Site-Out (LOSO)
-- Site-level hold-out (80/20 split)
-
-This ensures strong spatial generalisation and avoids overfitting.
-
----
-
-## 📈 Results
-- Best model: **Random Forest / QRF**
-- RMSE: **1.43 μg/m³**
-- MAE: **0.96 μg/m³**
-- R²: **0.658**
+## 🎯 Problem Statement
+Air pollution prediction is challenging due to:
+- Non-linear relationships between environmental variables  
+- High uncertainty in real-world conditions  
+- Lack of interpretable outputs for decision-making  
 
 ---
 
-## 🔍 Key Insights
-- Rainfall & wind reduce PM2.5 (removal & dispersion)
-- Pressure & humidity increase PM2.5 (stagnation)
-- Strong seasonal patterns
-- Nonlinear relationships captured by RF
+## 💡 Solution
+This project builds a complete pipeline:
+
+> **Data → Prediction → Uncertainty → Decision Support**
+
+Key features:
+- PM2.5 concentration prediction  
+- Uncertainty quantification (confidence intervals)  
+- Risk-aware decision support  
 
 ---
 
-## 🧠 Skills Demonstrated
-- Data preprocessing & feature engineering
-- Machine learning modeling
-- Model evaluation (RMSE, MAE, R²)
-- Uncertainty quantification (Conformal Prediction)
-- Spatial validation
+## 👤 Target Users
+- Government & environmental agencies  
+- Urban planners  
+- General public (air quality awareness)  
+
+---
+
+## 🧠 Methods
+- Machine Learning Models:
+  - LASSO / Elastic Net  
+  - Random Forest / Quantile Random Forest  
+- Uncertainty Quantification:
+  - Conformal Prediction (~95% coverage)  
+- Validation:
+  - Cross-validation + independent test set  
+
+---
+
+## 📊 Results
+- RMSE ≈ 1.95 μg/m³  
+- Coverage ≈ 95%  
+- Robust performance under high-variance conditions  
+
+---
+
+## 📦 System Design (Product Perspective)
+The system is designed as a decision-support product:
+
+- Input: environmental & meteorological data  
+- Processing: ML prediction + uncertainty estimation  
+- Output:
+  - Predicted PM2.5 levels  
+  - Risk levels  
+  - Confidence intervals  
+
+---
+
+## 🔄 Future Work
+- Real-time data integration (API-based system)  
+- Dashboard / visualization interface  
+- Integration with AI agents (e.g., task automation & reporting)  
 
 ---
 
 ## 🛠 Tech Stack
-- R / Python
-- scikit-learn / ranger
-- ggplot2 / matplotlib
-
----
-
-## 📌 Future Work
-- Model deployment pipeline
-- Drift detection
-- Real-time prediction system
-
----
-
-## 🚀 Business Impact
-- Built predictive models to estimate PM2.5 concentrations across regions
-- Improved prediction accuracy using ensemble and regularization methods
-- Designed validation strategies (LOSO, hold-out) to ensure model robustness
-- Applied uncertainty quantification to support decision-making under risk
-
-This project demonstrates the ability to:
-- Translate real-world problems into data science pipelines
-- Use machine learning for predictive analytics
-- Deliver interpretable and reliable insights
+- Python / R  
+- pandas / sklearn  
+- Data visualization  
