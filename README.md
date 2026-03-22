@@ -59,3 +59,16 @@ This ensures strong spatial generalisation and avoids overfitting.
 - Model deployment pipeline
 - Drift detection
 - Real-time prediction system
+
+---
+
+## 🚀 Business Impact
+- Built predictive models to estimate PM2.5 concentrations across regions
+- Improved prediction accuracy using ensemble and regularization methods
+- Designed validation strategies (LOSO, hold-out) to ensure model robustness
+- Applied uncertainty quantification to support decision-making under risk
+
+This project demonstrates the ability to:
+- Translate real-world problems into data science pipelines
+- Use machine learning for predictive analytics
+- Deliver interpretable and reliable insights
